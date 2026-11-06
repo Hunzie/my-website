@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>廖俊宇 3ds Max 作品集</title>
+  <title>廖俊宇 建模 作品集</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
   
@@ -157,7 +157,7 @@
     <p class="welcome-text">欢迎来到</p>
     <p class="school-text">韶关学院 · 25数字媒体技术01班</p>
     <h1 class="name-text">廖俊宇</h1>
-    <p class="title-text">3ds Max 作品集</p>
+    <p class="title-text">建模 作品集</p>
     <p class="subtitle-text">Welcome to My 3ds Max Portfolio</p>
     
     <a href="#works" class="enter-btn">进入了解</a>
@@ -170,8 +170,11 @@
     <div class="nav-tabs">
       <button class="nav-btn active" onclick="switchWork(0)">第一次作业</button>
       <button class="nav-btn" onclick="switchWork(1)">第二次作业</button>
-      <button class="nav-btn" onclick="switchWork(2)">手机</button>
-      <button class="nav-btn" onclick="switchWork(3)">鼠标</button>
+      <button class="nav-btn" onclick="switchWork(2)">第三次作业</button>
+      <button class="nav-btn" onclick="switchWork(3)">第四次作业1</button>
+       <button class="nav-btn" onclick="switchWork(4)">第四次作业2</button>
+       <button class="nav-btn" onclick="switchWork(5)">练习</button>
+       <button class="nav-btn" onclick="switchWork(6)">第五次作业</button>
     </div>
 
     <!-- 作业 1：沙发 -->
@@ -197,28 +200,61 @@
       </p>
     </div>
 
-    <!-- 手机 -->
+    <!-- 作业 3：窗帘 -->
     <div class="work-card" id="work-2">
+      <div class="media-container">
+        <img src="images/curtain.png" alt="窗帘建模">
+      </div>
+      <h2 class="work-title">第三次作业</h2>
+      <p class="work-desc">
+       窗帘建模的核心是表现布料的柔软褶皱与自然垂坠感，用样条线加放样挤出轮廓，放样缩放调整做出形状。
+      </p>
+    </div>
+
+    <!-- 作业 4：电脑三件套 -->
+    <div class="work-card" id="work-3">
+      <div class="media-container">
+        <img src="images/computer.png" alt="三件套建模">
+      </div>
+      <h2 class="work-title">三件套建模</h2>
+      <p class="work-desc">
+       电脑建模属于硬表面建模，强调比例准确与边缘倒角。显示屏以立方体为基础，挤出屏幕边框、内凹屏幕区域，支架可用圆柱或弯曲长方体；注意屏幕与边框的厚度差。键盘先建一个扁平长方体作为底座，再用阵列复制按键小方块，按键顶部可做轻微倒角或弧面；键位布局按标准配列排列即可。鼠标从立方体开始，用细分曲面或倒角工具塑造流线型外壳，顶部做出左右键分缝，侧面加滚轮凹槽。
+      </p>
+    </div>
+
+     <!-- 作业 4：手机 -->
+    <div class="work-card" id="work-4">
       <div class="media-container">
         <img src="images/phone.png" alt="手机建模">
       </div>
-      <h2 class="work-title">iPhone 4 建模</h2>
+      <h2 class="work-title">第四次作业</h2>
       <p class="work-desc">
-        电子产品硬表面建模。参考了经典的 iPhone 4 造型，主要使用样条线勾勒轮廓，结合布尔运算进行挖洞（如屏幕和Home键区域），并配合捕捉对齐功能完善细节。难点在于边框倒角的平滑处理以及侧边按键的精准定位。
+       电子产品硬表面建模。参考了经典的 iPhone 4 造型，主要使用样条线勾勒轮廓，结合布尔运算进行挖洞（如屏幕和Home键区域），并配合捕捉对齐功能完善细节。难点在于边框倒角的平滑处理以及侧边按键的精准定位。
       </p>
     </div>
 
-    <!-- 鼠标 -->
-    <div class="work-card" id="work-3">
+     <!-- 练习：骰子 -->
+    <div class="work-card" id="work-5">
       <div class="media-container">
-        <img src="images/mouse.png" alt="鼠标建模">
+        <img src="images/touzi.png" alt="骰子建模">
       </div>
-      <h2 class="work-title">鼠标曲面建模</h2>
+      <h2 class="work-title">练习</h2>
       <p class="work-desc">
-        鼠标建模。这是一个典型的曲面造型练习。首先建立长方体，通过添加可编辑多边形修改器，不断调整顶点和布线来塑造出贴合手部的人体工学弧度。最后使用涡轮平滑让表面变得圆润细腻，难点在于布线的合理性，以确保平滑后不发生变形。
+      骰子建模的关键是倒角与点数布局。先建一个立方体，对所有边和顶点做较大倒角，通过uvw展开贴上点数贴图，在材质添加深度贴图做出立体感。
       </p>
     </div>
 
+     <!-- 作业 5：卡通小房子 -->
+    <div class="work-card" id="work-6">
+      <div class="media-container">
+        <img src="images/house.png" alt="卡通小房子建模">
+      </div>
+      <h2 class="work-title">第五次作业</h2>
+      <p class="work-desc">
+       窗帘建模的核心是表现布料的柔软褶皱与自然垂坠感，用样条线加放样挤出轮廓，放样缩放调整做出形状。
+      </p>
+    </div>
+    
   </section>
 
   <script>
